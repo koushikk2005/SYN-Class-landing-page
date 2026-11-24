@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -35,7 +35,7 @@
     <main id="top">
         <section class="hero">
             <div class="hero-copy">
-                <h1>Take attendance from one class photo.</h1>
+                <h1>Take attendance from <mark>one class photo.</mark></h1>
                 <p>SYN Class recognizes students by face or voice and keeps every record in one place. Students join a subject with a QR code, so there is no roster to type in.</p>
                 <div class="actions">
                     <a class="btn btn-yellow" href="{{ app_url }}">Open the app</a>
@@ -105,7 +105,7 @@
 
                 <div class="walk" data-group="student" hidden>
                     <ol class="steps">
-                        <li><button class="on" data-img="student-faceid" data-alt="Student Face ID login"><b>Log in with Face ID</b><span>Look at the camera to sign in. Your face and voice are registered once.</span></button></li>
+                        <li><button class="on" data-img="student-faceid" data-alt="Student Face ID login"><b>Log in with Face ID</b><span>Take a photo to sign in. Your face and voice are registered once.</span></button></li>
                         <li><button data-img="student-enroll" data-alt="Enroll in Subject dialog"><b>Enroll in a subject</b><span>Enter the subject code from your teacher, or scan their QR code.</span></button></li>
                         <li><button data-img="student-dashboard" data-alt="Student dashboard with enrolled subjects"><b>Track your attendance</b><span>See your enrolled subjects with classes held and classes attended.</span></button></li>
                     </ol>
